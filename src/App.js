@@ -11,9 +11,9 @@ const UrlHandler = () => {
   const [globalError,setGlobalError] = useState("");
   const [isCopied, setIsCopied] = useState(false);
   const postData = async(data) => {
-   const Data = await fetch("http://localhost:8000/url/shorten", {
+   const Data = await fetch("http://localhost:7000/url/shorten", {
       method: "POST",
-      mode: "cors",
+      mode: "cors", 
       headers: {
         "Content-Type": "application/json",
       },
@@ -41,7 +41,7 @@ const UrlHandler = () => {
           <label className="heading" htmlFor="longurl">Short Your LongUrl : </label><br/>
           <input className="box" type="text" size={50} placeholder="Paste here longUrl"  value={longUrl}  onChange={(e) => setLongUrl(e.target.value)}/><br/>
           <div className="errorMessage">{globalError && <span>{globalError}</span>}</div>
-          <button type="submit" className="btn btn-outline-primary" onClick={()=> postData(longUrl)}>Convert</button><br />
+          <button type="submit" className="btn btn-outline-primary" onClick={()=> postData(longUrl,setGlobalError(""))}>Convert</button><br />
          
           <h5 className="output">{shortUrl}</h5> <button  className="btn btn-outline-primary" onClick={() => {
       if (shortUrl) {
