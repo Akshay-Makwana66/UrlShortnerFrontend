@@ -65,13 +65,22 @@ nav a {
   background-color: #0056b3;
 }
 
+
+
+
 .output {
   font-size: 18px;
   margin: 10px 0;
   border: 1px solid rgb(196, 192, 192);
-  height: 40px;
+  min-height: 40px; 
+  height: auto; 
   border-radius: 5px;
   padding-top: 7px;
+  display: inline-block;
+  width: 100%; 
 }
+
+
+
 
 
