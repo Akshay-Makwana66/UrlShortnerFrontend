@@ -11,7 +11,7 @@ const UrlHandler = () => {
   const [globalError,setGlobalError] = useState("");
   const [isCopied, setIsCopied] = useState(false);
   const postData = async() => {
-   const Data = await fetch("https://url-shortner-arm.vercel.app/url/shorten", {
+   const Data = await fetch("https://teenyurl-arm.vercel.app/url/shorten", {
       method: "POST",
       mode: "cors", 
       headers: {
