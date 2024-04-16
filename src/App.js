@@ -21,16 +21,7 @@ const UrlHandler = () => {
         longUrl: longUrl,
       })
     })
-    // 2 year contract; Company provided Visa. JD - 
-    // • Design and build applications/systems based on wireframes and product requirements documents.
-    //  • Work on back-end of core scripts using NodeJS/ MongoDB/React.js//Express.
-    //  • Unit test code for robustness, including edge cases, usability and general reliability. 
-    // • Write reusable, easy to maintain, versioned code using DRY principles 
-    // • Integrate existing tools and business systems (in-house tools) 
-    // • // Good exposure in creating dynamic web pages 
-    // • Familiarity with Server-Oriented Architecture and RESTful Web Services 
-    // • Mentor junior team members on system architecture, coding styles and inculcate 
-    // an attitude of continuous improvement in the team members. 1 year experienced candidates to apply. To be good with MERN Stack 
+    
     const storedData =await Data.json();
     console.log(storedData.data);
     if(storedData.status===false){
